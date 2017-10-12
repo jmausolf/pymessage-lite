@@ -16,7 +16,7 @@ class Recipient:
 		self.phone_or_email = phone_or_email
 
 	def __repr__(self):
-		return "ID: " + str(self.id) + " Phone or email: " + self.phone_or_email
+		return "ID: {} Phone or email: {}".format(str(self.id), self.phone_or_email)
 
 # Represents an iMessage message.
 #
@@ -29,7 +29,7 @@ class Message:
 		self.date = date
 
 	def __repr__(self):
-		return "Text: " + self.text + " Date: " + str(self.date)
+		return "Text: {} Date: {}".format(str(self.text), str(self.date))
 
 def _new_connection():
 	# The current logged-in user's Messages sqlite database is found at:
